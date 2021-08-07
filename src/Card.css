@@ -1,0 +1,98 @@
+h1{
+  color:white;
+  font-weight:400;
+}
+
+
+
+
+
+.outerGrid { 
+  background-color:#262626;
+  border-radius:0px;
+  width:100%;
+  margin-left:0;
+  margin-right:0;
+  margin-top:0%;
+  margin-bottom:0%;
+  padding-top:5%;
+  padding-bottom:5%;
+  display: grid; 
+  grid-template-areas:
+    "div1 div2";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; 
+  text-align:left;
+}
+
+.div1 { 
+  grid-area:div1;
+  display:grid;
+  grid-template-areas:
+    "div3 div4";
+} 
+.div2 {
+  grid-area: div2;
+  text-align:center;
+  display:grid;
+  grid-template-areas:
+    "div5 div6"
+    "div7 div8";
+
+} 
+.div2 p {
+  color:#5796fa;
+  font-weight:300;
+  font-size:1.3em;
+}
+.div2 h3{
+  color:white;
+  font-size:1.3em;
+  letter-spacing:0.025%;
+  font-weight:300;
+  padding-bottom:2.5%;
+}
+
+
+
+.div3 { 
+  grid-area: div3;
+
+} 
+.div4 { 
+  grid-area: div4;
+
+} 
+.div5 {
+  grid-area: div5;
+  padding:1%;
+} 
+.div6 {
+  grid-area: div6; 
+  padding:1%;
+} 
+.div7 { 
+  grid-area: div7; 
+  padding:1%;
+} 
+.div8 { 
+  grid-area: div8; 
+  padding:1%;
+} 
+
+
+@media screen and (max-width: 768px) {
+  .outerGrid{
+    display:block;
+  } 
+  .div1{
+    text-align:center;
+    display:block;
+  }
+  .div2{
+    margin-top:2.5%;
+  }
+  
+  
+}
+  
